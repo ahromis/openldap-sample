@@ -1,0 +1,276 @@
+# LDIF Export for dc=example,dc=org
+# Server: openldap (openldap)
+# Search Scope: sub
+# Search Filter: (objectClass=*)
+# Total Entries: 21
+
+version: 1
+
+# Entry 1: ou=Administrators,dc=example,dc=org
+dn: ou=Administrators,dc=example,dc=org
+changetype: add
+objectclass: organizationalUnit
+objectclass: top
+ou: Administrators
+
+# Entry 2: cn=Administrators-PG,ou=Administrators,dc=example,dc=org
+dn: cn=Administrators-PG,ou=Administrators,dc=example,dc=org
+changetype: add
+cn: Administrators-PG
+gidnumber: 501
+objectclass: posixGroup
+objectclass: top
+
+# Entry 3: cn=Bobby Tables,ou=Administrators,dc=example,dc=org
+dn: cn=Bobby Tables,ou=Administrators,dc=example,dc=org
+changetype: add
+cn: Bobby Tables
+gidnumber: 501
+givenname: Bobby
+homedirectory: /home/users/btables
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Tables
+uid: btables
+uidnumber: 1002
+userpassword: REPLACE_PASSWORD
+
+# Entry 4: cn=Gene Krantz,ou=Administrators,dc=example,dc=org
+dn: cn=Gene Krantz,ou=Administrators,dc=example,dc=org
+changetype: add
+cn: Gene Krantz
+gidnumber: 501
+givenname: Gene
+homedirectory: /home/users/gkrantz
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Krantz
+uid: gkrantz
+uidnumber: 1012
+userpassword: REPLACE_PASSWORD
+
+# Entry 5: cn=Lex Murphy,ou=Administrators,dc=example,dc=org
+dn: cn=Lex Murphy,ou=Administrators,dc=example,dc=org
+changetype: add
+cn: Lex Murphy
+gidnumber: 501
+givenname: Lex
+homedirectory: /home/users/lmurphy
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Murphy
+uid: lmurphy
+uidnumber: 1004
+userpassword: REPLACE_PASSWORD
+
+# Entry 6: cn=Steve Kerr,ou=Administrators,dc=example,dc=org
+dn: cn=Steve Kerr,ou=Administrators,dc=example,dc=org
+changetype: add
+cn: Steve Kerr
+gidnumber: 501
+givenname: Steve
+homedirectory: /home/users/skerr
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Kerr
+uid: skerr
+uidnumber: 1006
+userpassword: REPLACE_PASSWORD
+
+# Entry 7: ou=Developers,dc=example,dc=org
+dn: ou=Developers,dc=example,dc=org
+changetype: add
+objectclass: organizationalUnit
+objectclass: top
+ou: Developers
+
+# Entry 8: cn=Developers-PG,ou=Developers,dc=example,dc=org
+dn: cn=Developers-PG,ou=Developers,dc=example,dc=org
+changetype: add
+cn: Developers-PG
+gidnumber: 500
+objectclass: posixGroup
+objectclass: top
+
+# Entry 9: cn=Grace Hopper,ou=Developers,dc=example,dc=org
+dn: cn=Grace Hopper,ou=Developers,dc=example,dc=org
+changetype: add
+cn: Grace Hopper
+gidnumber: 500
+givenname: Grace
+homedirectory: /home/users/ghopper
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Hopper
+uid: ghopper
+uidnumber: 1011
+userpassword: REPLACE_PASSWORD
+
+# Entry 10: cn=Richard Stallman,ou=Developers,dc=example,dc=org
+dn: cn=Richard Stallman,ou=Developers,dc=example,dc=org
+changetype: add
+cn: Richard Stallman
+gidnumber: 500
+givenname: Richard
+homedirectory: /home/users/rms
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Stallman
+uid: rms
+uidnumber: 1001
+userpassword: REPLACE_PASSWORD
+
+# Entry 11: cn=Sarah Conner,ou=Developers,dc=example,dc=org
+dn: cn=Sarah Conner,ou=Developers,dc=example,dc=org
+changetype: add
+cn: Sarah Conner
+gidnumber: 500
+givenname: Sarah
+homedirectory: /home/users/sconner
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Conner
+uid: sconner
+uidnumber: 1007
+userpassword: REPLACE_PASSWORD
+
+# Entry 12: cn=Steve Wozniak,ou=Developers,dc=example,dc=org
+dn: cn=Steve Wozniak,ou=Developers,dc=example,dc=org
+changetype: add
+cn: Steve Wozniak
+gidnumber: 500
+givenname: Steve
+homedirectory: /home/users/woz
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Wozniak
+uid: woz
+uidnumber: 1005
+userpassword: REPLACE_PASSWORD
+
+# Entry 13: ou=Scientists,dc=example,dc=org
+dn: ou=Scientists,dc=example,dc=org
+changetype: add
+objectclass: organizationalUnit
+objectclass: top
+ou: Scientists
+
+# Entry 14: cn=Jane Goodall,ou=Scientists,dc=example,dc=org
+dn: cn=Jane Goodall,ou=Scientists,dc=example,dc=org
+changetype: add
+cn: Jane Goodall
+gidnumber: 502
+givenname: Jane
+homedirectory: /home/users/jgoodall
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Goodall
+uid: jgoodall
+uidnumber: 1008
+userpassword: REPLACE_PASSWORD
+
+# Entry 15: cn=Marie Curie,ou=Scientists,dc=example,dc=org
+dn: cn=Marie Curie,ou=Scientists,dc=example,dc=org
+changetype: add
+cn: Marie Curie
+gidnumber: 502
+givenname: Marie
+homedirectory: /home/users/mcurie
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Curie
+uid: mcurie
+uidnumber: 1003
+userpassword: REPLACE_PASSWORD
+
+# Entry 16: cn=Neil deGrasse Tyson,ou=Scientists,dc=example,dc=org
+dn: cn=Neil deGrasse Tyson,ou=Scientists,dc=example,dc=org
+changetype: add
+cn: Neil deGrasse Tyson
+gidnumber: 502
+givenname: Neil Tyson
+homedirectory: /home/users/ndgt
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Tyson
+uid: ndgt
+uidnumber: 1009
+userpassword: REPLACE_PASSWORD
+
+# Entry 17: cn=Rick Sanchez,ou=Scientists,dc=example,dc=org
+dn: cn=Rick Sanchez,ou=Scientists,dc=example,dc=org
+changetype: add
+cn: Rick Sanchez
+gidnumber: 502
+givenname: Rick
+homedirectory: /home/users/rsanchez
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Sanchez
+uid: rsanchez
+uidnumber: 1010
+userpassword: REPLACE_PASSWORD
+
+# Entry 18: cn=Scientists-PG,ou=Scientists,dc=example,dc=org
+dn: cn=Scientists-PG,ou=Scientists,dc=example,dc=org
+changetype: add
+cn: Scientists-PG
+gidnumber: 502
+objectclass: posixGroup
+objectclass: top
+
+# Entry 19: ou=ServiceAccounts,dc=example,dc=org
+dn: ou=ServiceAccounts,dc=example,dc=org
+changetype: add
+objectclass: organizationalUnit
+objectclass: top
+ou: ServiceAccounts
+
+# Entry 20: cn=Jenkins Service Account,ou=ServiceAccounts,dc=example,dc=or...
+dn: cn=Jenkins Service Account,ou=ServiceAccounts,dc=example,dc=org
+changetype: add
+cn: Jenkins Service Account
+gidnumber: 503
+givenname: Jenkins
+homedirectory: /home/users/jenkins
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: ServiceAccount
+uid: jenkins
+uidnumber: 1013
+userpassword: REPLACE_PASSWORD
+
+# Entry 21: cn=ServiceAccounts-PG,ou=ServiceAccounts,dc=example,dc=org
+dn: cn=ServiceAccounts-PG,ou=ServiceAccounts,dc=example,dc=org
+changetype: add
+cn: ServiceAccounts-PG
+gidnumber: 503
+objectclass: posixGroup
+objectclass: top
+
